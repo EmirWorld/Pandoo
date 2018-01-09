@@ -1,5 +1,5 @@
 .form {
-  &__group::not(:last-child) {
+  &__group:not(:last-child) {
     margin-bottom: 2rem;
     
   }
@@ -35,6 +35,7 @@
 
   &__label {
     color: $color-secondary-text;
+
 
     font-size: 1.2rem;
     font-weight: 700;
