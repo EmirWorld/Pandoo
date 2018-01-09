@@ -44,13 +44,15 @@ body{
 
 .heading-secondary{
 
+    color: $color-white;
+
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(to left,$color-primary-dark,$color-primary-light);
-
-    -webkit-background-clip: text;
-    color: transparent;
+    //background-image: linear-gradient(to left,$color-primary-dark,$color-primary-light);
+    //
+    //-webkit-background-clip: text;
+    //color: transparent;
     animation-name: blurIn;
     animation-delay: 2s;
     transition: all 1.5s;
@@ -58,11 +60,11 @@ body{
 
    
 
-
-    &:hover{
-        color:$color-primary;
-
-}
+//    //
+//    //&:hover{
+//    //    color:$color-primary;
+//
+//}
 
 
 }
@@ -70,12 +72,14 @@ body{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    color:$color-white;
+
 
 }
 
 .paragraph{
     font-size: $default-font-size;
-
+    color:$color-white;
 
     &:not(:last-child){
         margin-bottom: 3rem;

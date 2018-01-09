@@ -1,18 +1,21 @@
 .section-about {
-  background-color: $color-backgroud-gray;
+  background-color: transparent;
   padding: 25rem 0;
   margin-top: -20vh;
+
 }
 
 .section-features {
   margin-top: -10rem;
   padding: 20rem 0;
-  background-image: linear-gradient(
-                  to right bottom,
-                  rgba($color-primary-light, 0.8),
-                  rgba($color-primary-dark, 0.8)
-  ),
-  url(../img/wb1.png);
+  //background-image: linear-gradient(
+  //                to right bottom,
+  //                rgba($color-black-backgroud-light, 0.8),
+  //                rgba($color-black-backgroud-dark, 0.8)
+  //),
+  //url(../img/wb1.png);
+
+  background-color: transparent;
 
   background-size: cover;
 
@@ -24,9 +27,10 @@
 }
 
 .section-skills {
-  background-color: $color-backgroud-gray;
+  //background-color: $color-backgroud-gray;
   padding: 25rem 0 20rem 0;
   margin-top: -10rem;
+  background-color: transparent;
 
 }
 
@@ -38,24 +42,27 @@
 }
 
 .section-booking {
+  background-color: transparent;
 
-  background-image: linear-gradient(
-                  to right bottom,
-                  rgba($color-primary-light, 0.8),
-                  rgba($color-primary-dark, 0.8)
-  );
+  //background-image: linear-gradient(
+  //                to right bottom,
+  //                rgba($color-primary-light, 0.8),
+  //                rgba($color-primary-dark, 0.8)
+  //);
   padding: 15rem 0;
+
+  border-bottom: 1px solid $color-primary-light;
 
 }
 
 .book {
-  background-image: linear-gradient(
-                  to right bottom,
-                  $color-primary-light,
-                  $color-primary-dark
-  ),
-  url(../img/panda.jpg);
-  background-size: cover;
+  //background-image: linear-gradient(
+  //                to right bottom,
+  //                $color-black-backgroud-light,
+  //                $color-black-backgroud-dark
+  //),
+  //url(../img/panda.jpg);
+  //background-size: cover;
 
   height: 48rem;
   box-shadow: 0 1.5rem 4rem rgba($color-for-shadow, .2);
