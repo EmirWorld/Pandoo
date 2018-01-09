@@ -1,0 +1,81 @@
+.btn {
+  &.btn--primary {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      display: inline-block;
+      text-decoration: none;
+      padding: 1rem 4rem;
+      display: inline-block;
+      transition: all .2s;
+      border-radius: 10rem;
+      color: $color-backgroud-gray;
+
+      font-size: $default-font-size;
+      background-color: $color-primary-dark;
+      border: none;
+      cursor: pointer;
+
+
+      &:hover {
+        background-color: $color-accent;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-for-shadow,.2)
+      }
+
+      &:active {
+        transform: translateY(-0.1rem);
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+
+  &.btn--submit {
+    font-size: $default-font-size;
+    border-radius: 10rem;
+    display: inline-block;
+    background-color: $color-backgroud-gray;
+
+
+
+    &:hover {
+      background-color: $color-accent;
+      transform: translateY(-0.3rem);
+    }
+    &:active {
+      transform: translateY(-0.1rem);
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &.btn--white {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    transition: all .2s;
+    border-radius: 10rem;
+    color: $color-secondary-text;
+
+    font-size: $default-font-size;
+    background-color: $color-text-icons;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-text-icons;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-for-shadow,.2);
+      color: $color-secondary-text;
+
+
+    }
+    &:active {
+      transform: translateY(-0.1rem);
+      background-color: $color-text-icons;
+      box-shadow: 0 1rem 2rem rgba($color-for-shadow,.2)
+    }
+  }
+}
