@@ -38,32 +38,33 @@
       @include absCenter;
       border-radius: 3px;
 
-      width: 70%;
+      width: 88%;
 
-      height: 50%;
+      height: 80%;
       box-shadow: 0 2rem 4rem rgba($color-for-shadow, 0.2);
 
-      background-color: $color-white;
+      background-image: url("../img/bcground.png");
 
       overflow: hidden;
       overflow-y: scroll;
+      padding: 4rem;
     }
 
-    &__left {
-
-      width: 100%;
-
-      //display: table-cell;
-    }
-
-    &__right {
-      //width: 50%;
-
-      padding: 3rem 5rem;
-
-      display: table-cell;
-      vertical-align: middle;
-    }
+    //&__left {
+    //
+    //  width: 100%;
+    //
+    //  //display: table-cell;
+    //}
+    //
+    //&__right {
+    //  //width: 50%;
+    //
+    //  padding: 3rem 5rem;
+    //
+    //  display: table-cell;
+    //  vertical-align: middle;
+    //}
 
     &__img {
       width: 40%;
@@ -76,6 +77,8 @@
     }
 
     &__text {
+      color: $color-white;
+      text-align: center;
 
       font-size: 1.4rem;
       margin-bottom: 4rem;
@@ -92,9 +95,25 @@
       -webkit-hyphens: auto;
 
       hyphens: auto;
+      padding-top: 2rem;
+
 
     }
 
   }
+
+
+  &__languages{
+    display: block;
+    text-align: center;
+
+    &-img{
+      height: 8rem;
+      background-size: contain;
+    }
+
+  }
+
+
 
 }
