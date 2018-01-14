@@ -93,12 +93,13 @@
   &__coverclip {
     height: 100%;
 
-    background-image: linear-gradient(105deg, rgba($color-text-icons, .6) 0%, rgba($color-text-icons, .6) 50%, transparent 50%);
+    //background-image: linear-gradient(105deg, rgba($color-text-icons, .6) 0%, rgba($color-text-icons, .6) 50%, transparent 50%);
 
     z-index: 5;
 
     background-size: cover;
     position: relative;
+
 
   }
 

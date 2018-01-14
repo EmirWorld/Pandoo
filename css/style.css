@@ -352,7 +352,6 @@ body {
     z-index: 17; }
   .book__coverclip {
     height: 100%;
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, transparent 50%);
     z-index: 5;
     background-size: cover;
     position: relative; }
@@ -815,32 +814,28 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  border-bottom: 3px solid transparent;
+  border: 0.3px solid #ffffff;
   width: 70%;
   display: block;
-  color: inherit;
+  color: #324f52;
   transition: all 0.5s; }
   .form__input--text {
     font-family: inherit;
     font-size: 1.5rem;
-    padding: 1.5rem 2rem;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    border-bottom: 3px solid transparent;
-    width: 70%;
     display: block;
-    color: inherit;
+    color: #324f52;
     transition: all 0.5s;
-    border: 1px solid #ffffff;
+    border: 0.3px solid #ffffff;
     position: absolute;
-    top: 5px;
+    top: 0;
     right: 0;
-    width: 40%;
+    width: 50%;
+    height: 50%;
     margin-top: 13%;
     margin-right: 5%;
-    padding-bottom: 20%; }
+    padding: 1.5rem 2rem 20%; }
     .form__input--text:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -848,7 +843,7 @@ body {
     .form__input--text:focus:invalid {
       border-bottom: 3px solid #ff7730; }
     .form__input--text::-webkit-input-placeholder {
-      color: #757575; }
+      color: #324f52; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -859,7 +854,7 @@ body {
     color: #757575; }
 
 .form__label {
-  color: #757575;
+  color: #324f52;
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
@@ -912,7 +907,7 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
-.popup--programing {
+.popup--default {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -922,7 +917,7 @@ body {
   z-index: 3000;
   opacity: 0;
   visibility: hidden; }
-  .popup--programing__close:link, .popup--programing__close:visited {
+  .popup--default__close:link, .popup--default__close:visited {
     color: #324f52;
     position: absolute;
     top: 2.5rem;
@@ -932,11 +927,11 @@ body {
     display: inline-block;
     transition: all .4s;
     line-height: 1; }
-  .popup--programing:target {
+  .popup--default:target {
     opacity: 1;
     visibility: visible;
     transition: all .10s; }
-  .popup--programing__content {
+  .popup--default__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -949,13 +944,13 @@ body {
     overflow: hidden;
     overflow-y: scroll;
     padding: 4rem; }
-  .popup--programing__img {
+  .popup--default__img {
     width: 40%;
     height: 40%;
     border-bottom-right-radius: 50%;
     background-size: cover;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
-  .popup--programing__text {
+  .popup--default__text {
     color: #ffffff;
     text-align: center;
     font-size: 1.4rem;
