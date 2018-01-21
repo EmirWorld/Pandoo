@@ -4,6 +4,7 @@
   box-shadow: 0 1.5rem 4rem rgba($color-for-shadow, .2);
   //background-color: rgba($color-text-icons, 0.6);
 
+  padding: 6rem;
 
   padding: 6rem;
   font-size: $default-font-size;
@@ -12,12 +13,40 @@
 
 
 
+  @include respond(tab-port){
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+    transform: skewX(0);
+  }
+
+
+  @include respond(phone){
+    transform: skewX(0);
+  }
+
+
+
+
+
+
+
 
   &:hover{
-    transform: scale(1.02) translate(-0.2rem);
+
 
     box-shadow: 0 1.5rem 4rem rgba($color-for-shadow, .3);
     transform: skewX(-12deg);
+
+
+    @include respond(tab-port){
+      transform:translateX(0rem) skewX(0);
+    }
+
+
+    @include respond(phone){
+      transform:translateX(0rem) skewX(0);
+    }
   }
 
   &__shape {
@@ -31,6 +60,16 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem)skewX(12deg);
     position: relative;
+
+
+    @include respond(tab-port){
+      transform:translateX(-3rem) skewX(0);
+    }
+
+
+    @include respond(phone){
+       transform:translateX(-3rem) skewX(0);
+     }
   }
 
   &__img {
@@ -40,6 +79,15 @@
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(tab-port){
+      transform:skewX(0);
+    }
+
+    @include respond(phone){
+      transform: skewX(0);
+    }
+
   }
 
   &__caption {

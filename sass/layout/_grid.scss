@@ -6,7 +6,30 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+
+
+
   }
+
+  @include respond(tab-port){
+    max-width: 50rem;
+
+    margin: 0 auto;
+
+  }
+  @include respond(tab-port){
+    max-width: 50rem;
+    padding: 0 4rem;
+
+    margin: 0 auto;
+
+  }
+
+
+
+
+
 
   @include clearfix;
 
@@ -16,11 +39,28 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horistontal;
+
+      @include respond(tab-port){
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+
+
+      }
     }
+
+    @include respond(tab-port){
+      width: 100% !important;
+
+
+    }
+
+
   }
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horistontal}) / 2);
+
+
 
   }
 

@@ -7,7 +7,7 @@ body{
     
 
    
-    padding: 3rem;
+
 }
 
 
@@ -16,6 +16,10 @@ body{
     text-transform: uppercase;
     backface-visibility: hidden;
     transition: all .6s;
+    display: inline-block;
+
+
+
 
 
     &--main{
@@ -27,6 +31,12 @@ body{
         -webkit-animation: animation 865ms linear both;
         animation: animation 865ms linear both;
         animation-delay: 20ms;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+
+        }
     
     }
     
@@ -37,6 +47,12 @@ body{
         letter-spacing: 1.2rem;
         animation-name: moveInLeft;
         animation-duration: 2s;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+            font-size: 1.5rem;
+
+        }
     
     }
 
@@ -49,6 +65,8 @@ body{
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
+    display: inline-block;
+
     //background-image: linear-gradient(to left,$color-primary-dark,$color-primary-light);
     //
     //-webkit-background-clip: text;
@@ -56,6 +74,26 @@ body{
     animation-name: blurIn;
     animation-delay: 2s;
     transition: all 1.5s;
+
+
+    @include respond(tab-port){
+        font-size: 2.5rem;
+        margin-top: 10rem;
+
+
+        display: inline-block;
+
+
+
+
+    }
+    @include respond(phone){
+        font-size: 2rem;
+        display: inline-block;
+        margin-top: 8rem;
+
+
+    }
    
 
    
